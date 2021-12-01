@@ -10,6 +10,12 @@ class PublicJob {
 
   //ACTIVIDAD
   //IMPLEMENTE LA CONVERSIÓN DE JSON A OBJETO
-  // factory PublicJob.fromJson(Map<String, dynamic> map) {
-  // }
+  factory PublicJob.fromJson(Map<String, dynamic> map) {
+    return PublicJob(
+        title: map['title'],
+        description: map['description'],
+        payment: map['payment'],
+        category: map['category'],
+        experience: map['experience']);
+  }
 }

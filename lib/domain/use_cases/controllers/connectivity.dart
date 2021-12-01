@@ -6,9 +6,10 @@ class ConnectivityController extends GetxController {
   final _connected = false.obs;
 
   //ACTIVIDAD
-  // Implemente la actualización del estado de conectividad 
-  // set connectivity(ConnectivityResult connectivity) {
-  // }
+  // Implemente la actualización del estado de conectividad
+  set connectivity(ConnectivityResult connectivity) {
+    _connected.value = connectivity != ConnectivityResult.none;
+  }
 
   // Getters
   bool get connected => _connected.value;
