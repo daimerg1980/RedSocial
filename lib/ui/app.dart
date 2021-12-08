@@ -20,10 +20,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     _stateManagementInit();
     return GetMaterialApp(
-      title: 'Red Egresados MinTIC',
-      // Quitamos el banner DEBUG
+      title: 'Red Daimer',
       debugShowCheckedModeBanner: false,
-      // Establecemos el tema claro
       theme: MyTheme.ligthTheme,
       // Establecemos el tema oscuro
       darkTheme: MyTheme.darkTheme,
